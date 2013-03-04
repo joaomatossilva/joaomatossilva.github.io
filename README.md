@@ -2,6 +2,8 @@
 
 Jekyll is rad! It’s a simple, blog aware, static site generator built in Ruby. It takes a template directory, runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website. Boom!
 
+If you are interested in getting started [this](http://web-design-weekly.com/2013/03/04/going-static-with-jekyll-deploying-via-github-for-free/) should help you out.
+
 This repository is based off [Jekyll Base](https://github.com/danielmcgraw/Jekyll-Base) by Daniel McGraw Jekyll Base.
 
 ### Structure ###
