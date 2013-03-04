@@ -1,6 +1,8 @@
 ## Jekyll Boilerplate ##
 
-A jekyll starting point. Based on [Jekyll Base](https://github.com/danielmcgraw/Jekyll-Base) by Daniel McGraw.
+Jekyll is rad! It’s a simple, blog aware, static site generator built in Ruby. It takes a template directory, runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website. Boom!
+
+This repository is based off [Jekyll Base](https://github.com/danielmcgraw/Jekyll-Base) by Daniel McGraw Jekyll Base.
 
 ### Structure ###
 <pre>
@@ -31,7 +33,7 @@ This is the base post template.
 
 ### _posts ###
 This folder is where all the posts are stored. Notice the naming convention that is used. You will want to name your files with the the publish date preceeding the posts title all seperated by dashes (Year-Month-Day-Title-Of-The-Post.md). The post date that you see is pulled straight from this filename so make sure you lable your files right.
- 
+
 #### 1970-01-01-placeholder-post.md ####
 This is a simple blog post using markdown. To learn more about markdown check out the [markdown syntax documentation](http://daringfireball.net/projects/markdown/syntax). Also notice that there is YAML Front Matter in this file specifying the layout it will use and the title of the post. Layout is one of a couple predefined global variables. You can also specify custom variables in the YAML Front Matter.
 
