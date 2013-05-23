@@ -1,8 +1,8 @@
 auto: true
-server: truemarkdown: rdiscount
+server: auto
+truemarkdown: rdiscount
 pygments: true
 permalink: /posts/:title
-auto: true
 rdiscount:
   extensions: [smart]
 title : Kappy Space
