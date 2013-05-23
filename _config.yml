@@ -1,3 +1,18 @@
 auto: true
-server: true
-markdown: rdiscount
+server: truemarkdown: rdiscount
+pygments: true
+permalink: /posts/:title
+auto: true
+rdiscount:
+  extensions: [smart]
+title : Kappy Space
+production_url : http://kappy.github.io
+description: "Personal Space"
+disqus_shortname: kappyspace
+analytics: a
+gauges: a
+author :
+  name : Joao Matos Silva aka Kappy
+  github : kappy
+  twitter : kappy
+  email: kappy@acydburne.com.pt

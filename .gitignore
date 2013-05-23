@@ -16,4 +16,14 @@ Thumbs.db
 .cache
 
 # Static site output
-_site
+_site/*
+_theme_packages/*
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
+
+*~
+_assets/bootstrap/tests
+node_modules/
