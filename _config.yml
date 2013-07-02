@@ -18,13 +18,13 @@ author :
 prose:
   metadata:
     _posts:
-	  - name: "layout"
-	    field:
-	  	  element: "text"
-	      label: "Layout"
-	      value: "post"
+      - name: "layout"
+        field:
+          element: "text"
+          label: "Layout"
+          value: "post"
       - name: "title"
-	    field:
-	      element: "text"
-	      label: "Title"
-	      value: ""
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
