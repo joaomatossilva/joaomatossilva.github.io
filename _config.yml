@@ -15,3 +15,16 @@ author :
   github : kappy
   twitter : kappyzor
   email: kappy@acydburne.com.pt
+prose:
+  metadata:
+    _posts:
+	  - name: "layout"
+	    field:
+	  	  element: "text"
+	      label: "Layout"
+	      value: "post"
+      - name: "title"
+	    field:
+	      element: "text"
+	      label: "Title"
+	      value: ""
