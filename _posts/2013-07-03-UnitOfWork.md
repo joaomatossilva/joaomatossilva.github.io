@@ -1,6 +1,7 @@
 ---
 published: false
 layout: post
+title: Unit Of Work
 ---
 
 This time I want to indroduce my approach on the Unit Of Work pattern ([Unit of Work](http://martinfowler.com/eaaCatalog/unitOfWork.html)).
