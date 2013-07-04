@@ -73,9 +73,9 @@ Are you still doing Ado.Net directly? In what year do you live in?
 {% endhighlight %}
 
 This is the base code. Now we have a few different options:
-- 1. Add public properties of `Connection` and `Transaction` and let the outside world to manage them.
-- 2. Add protected properties of `Connection` and `Transaction` and derive the class to a data access specific class.
-- 3. Add to it the public interface of your favorite micro Orm library.
+1. Add public properties of `Connection` and `Transaction` and let the outside world to manage them.
+2. Add protected properties of `Connection` and `Transaction` and derive the class to a data access specific class.
+3. Add to it the public interface of your favorite micro Orm library.
 
 For option \#1, I really don't like it. It most certainly will lead to micro managing connection and transactions...
 For option \#2 and \#3, it's really up to you. You can even mix and match them.
