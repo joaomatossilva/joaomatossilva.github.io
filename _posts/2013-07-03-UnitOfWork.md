@@ -57,10 +57,12 @@ Are you still doing Ado.Net directly? In what year do you live in?
                 if (transaction != null)
                 {
                     transaction.Dispose();
+                    transaction = null;
                 }
                 if (connection != null)
                 {
                     connection.Dispose();
+                    connection = null;
                 }
             }
         }
@@ -146,10 +148,12 @@ This is what I end up with:
                 if (transaction != null)
                 {
                     transaction.Dispose();
+                    transaction = null;
                 }
                 if (connection != null)
                 {
                     connection.Dispose();
+                    connection = null;
                 }
             }
         }
