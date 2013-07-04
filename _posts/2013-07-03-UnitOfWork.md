@@ -11,7 +11,8 @@ I use this aproach mostly with Micro ORM frameworks, like Dapper, Simple.Data, e
 Are you still doing Ado.Net directly? In what year do you live in?
 
 {% highlight csharp %}
-	public class UnitOfWork : IDisposable
+
+    public class UnitOfWork : IDisposable
     {
         private readonly IDbConnection connection;
         private IDbTransaction transaction;
