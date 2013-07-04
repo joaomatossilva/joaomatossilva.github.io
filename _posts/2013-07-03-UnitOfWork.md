@@ -128,12 +128,10 @@ This is what I end up with:
             return connection.Query<T>(query, param, transaction, commandType: commandType);
         }
 
-\#if !CSHARP30
         public IEnumerable<dynamic> Query(string query, object param = null, CommandType commandType = CommandType.Text)
         {
             return connection.Query(query, param, transaction, commandType: commandType);
         }
-\#endif
 
         public void Dispose()
         {
