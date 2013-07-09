@@ -33,4 +33,5 @@ Number of properties 3
 Number of methods 160
 Number of fields 0
 
-Without starting picking on the name of the class, this was supposed to be a data access class. A single data access class for the entire project. All entities were loaded and saved from this class.
+Without starting picking on the name of the class, the reasons behind those 160 methods it's because this was supposed to be a data access class. A single data access class for the entire project. All entities were loaded and saved from this class. It was madness to find a single entity related methods.
+A direct violation of [SRP](http://en.wikipedia.org/wiki/Single_responsibility_principle).
