@@ -1,6 +1,7 @@
 ---
 published: false
 layout: post
+title: Code Metrics Alarm
 ---
 
 When you're building any kind of software development project, there are some red flags that you should be aware of.
