@@ -1,6 +1,7 @@
 ---
 published: false
 layout: post
+title: Dynamic Type Discovery
 ---
 
 On one of my open source projects (check you my [github profile](https://github.com/kappy)) I use some dynamic type discovery and loading. I need these because I want to load every type that implements an interface or has a specified attribute. I also need to be able to load types that reference my asssembly (not known to my assembly).
