@@ -22,7 +22,7 @@ Few days after, I received 2 new issues: You library is blowing out with my appl
 Hum... ok.. fine, But it really works on my machine...
 Let's digg a bit more about `ReflectionTypeLoadException` shall we. 
 [http://msdn.microsoft.com/en-us/library/system.reflection.reflectiontypeloadexception.aspx](Class Reference)
-> There is also another array of exceptions (LoaderExceptions property). This exception array represents the exceptions that were thrown by the class loader. The holes in the class array line up with the exceptions.
+    There is also another array of exceptions (LoaderExceptions property). This exception array represents the exceptions that were thrown by the class loader. The holes in the class array line up with the exceptions.
 
 Hum.... yup, the problem wasn't on my library but on some missing dependencies of the application, but because the library tries to enumerate all the types on the AppDomain, it burst in flames.
 
