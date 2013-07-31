@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Markdown on Visual Studio 2013
 layout: post
 ---
