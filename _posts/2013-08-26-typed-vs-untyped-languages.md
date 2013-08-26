@@ -8,16 +8,17 @@ Today my thoughts go to typed versus untyped languages. That said, I know that u
 Look at this sample code on Javascript:
 
 {% highlight javascript %}
-var onion = { name: 'onion', numberOfLayers: 5 };
-document.write("<p>" + onion.name + "</p>");
-
-onion = { name: 'potato', isFried: false };
-document.write("<p>" + onion.name + "</p>");
-
-onion = 0;
-document.write("<p>" + onion + "</p>");
+    
+    var onion = { name: 'onion', numberOfLayers: 5 };
+    document.write("<p>" + onion.name + "</p>");
+    
+    onion = { name: 'potato', isFried: false };
+    document.write("<p>" + onion.name + "</p>");
+    
+    onion = 0;
+    document.write("<p>" + onion + "</p>");
+    
 {% endhighlight %}
-
 [Live Feedle](http://jsfiddle.net/kappy/dLYYd/)
 
 This is a perfecly valid code. The most obvious matter on this type of assignments is that, we're assignin completly diferent things to the same variable witch causes the variable to loose all its meaning.
@@ -27,4 +28,3 @@ This is why I love typed languages:
 ![](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/typeLanguage_zps682579fc.png)
 
 Can you see that thin red line? That's the IDE telling you: You're doing it wrong!
-
