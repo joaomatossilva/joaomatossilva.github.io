@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Typed vs Untyped languages
 layout: post
 ---
