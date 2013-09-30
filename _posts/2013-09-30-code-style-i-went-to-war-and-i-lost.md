@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "Code Style - I went to war... and I lost..."
 layout: post
 ---
