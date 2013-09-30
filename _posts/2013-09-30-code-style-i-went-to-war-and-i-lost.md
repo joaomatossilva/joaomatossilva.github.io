@@ -52,4 +52,4 @@ The numbers speak for themselves.
 - K&R style: 11%
 - Other 1%
 
-As it turns out, vertical space is a thing of the past. At least for someone... not me thou.
+As it turns out, vertical space is a thing of the past. At least for someone... not me tho.
