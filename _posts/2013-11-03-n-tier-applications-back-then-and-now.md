@@ -42,4 +42,4 @@ Well... Databases will be databases. Not much to say here. Only NoSql databases 
 
 ### My Conslusions
 
-A lot has changed in these years, and we have to adapt. Doing Ado.Net directly nowadays is unthinkable. There are tools and frameworks to help us. We don't need to reinvent the wheel every project. That isn't the way to be productive.
+A lot has changed in these years, and we have to adapt. Doing Ado.Net directly nowadays is unthinkable. There are tools and frameworks to help us. We don't need to reinvent the wheel every project. That isn't the way to be productive. In the end, it's one of your major goals.
