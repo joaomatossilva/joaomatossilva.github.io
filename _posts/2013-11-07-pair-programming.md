@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Pair Programming
 layout: post
 ---
