@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Code with value
 layout: post
 ---
