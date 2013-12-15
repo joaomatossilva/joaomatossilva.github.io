@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: To log or not to log...
 layout: post
 ---
@@ -21,4 +21,3 @@ Can you see any parameter of type `Exception` on the `Log_Error` method? Nop... 
 
 
 A little tip: Logging should be transparent. If we remove the logging from the source code, the application should run the same way. Having 358 coded references to the concrete type isn't probably the best way to do it.
- 
