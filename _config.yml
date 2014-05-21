@@ -1,9 +1,7 @@
-truemarkdown: rdiscount
+markdown: kramdown
 pygments: true
 permalink: /posts/:title
 auto: true
-rdiscount:
-  extensions: [smart]
 title : Kappy Space
 production_url : http://kappy.github.io
 description: "Personal Space"
