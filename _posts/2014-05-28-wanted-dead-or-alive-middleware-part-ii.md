@@ -10,6 +10,9 @@ This is a series of blog posts that focuses on faulty middleware services invoca
 
 Part II (this)
 
+[Part III](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-iii/)
+
+The full source code can be located [here](https://github.com/kappy/FaultyMiddleware)
 
 ## Try Again, and Again, and Again...
 
@@ -140,3 +143,6 @@ Note also the Execution Fail number is a bit higher. That's also because we're d
 This is a great improvement. We traded of some performance to gain some resilience. But can we improve this better, and of course, without changing any implementation?
 Of course we can.
 On my next post, I'll add some cache layer, again by using interception, and not changing anything on the client and the retries components.
+
+
+The full source code can be located [here](https://github.com/kappy/FaultyMiddleware)
