@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "Wanted dead or alive: Middleware (part III)"
 layout: post
 ---
