@@ -14,6 +14,7 @@ This post will also be an extension from what I've already said on my previous [
 Let's get to the point. My first problem with Repositories is that they hide, and often blocks you the use of advanced features of the actual ORM. Future queries, cascade deletes, batch updates, etc...
 
 I've seen two different strategies with repositories. The most radical one, it's a full closed box, where they implement every query that needs to be issued. They main advantage of this method is that there's a single place where all queries sit, at the cost of filling each repository with methods for each different type.
+
     public interface ICarRepository : IRepository
     {
         Car GetById(int id);
