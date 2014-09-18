@@ -28,6 +28,7 @@ The other way, is build one generic, fits all repository. This is also the most 
 
 * Exposing the Collection-Like as `IEnumerable`: although this defers the query, this blocks you the ability to make joins with entities, or even perform aggregations and other linq extensions.
 * Exposing a `SaveChanges()` or internally call the orm `SaveChanges` on adding/updating items: It violates your unit of work, and blocks you the ability to save different entities on the same transaction.
+
         public void CreateAndAddItemToShoppingCart(object newItem)
         {
             var cart = new ShoppingCart();
