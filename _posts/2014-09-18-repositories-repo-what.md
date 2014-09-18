@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "Repositories! Repo what??"
 layout: post
 ---
