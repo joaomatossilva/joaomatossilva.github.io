@@ -7,11 +7,13 @@ layout: post
 Lately, the Repository pattern has become the conversion topic almost every day, mostly because nowadays it's a so popular pattern, and most people get admired on the fact that I prefer to avoid it, in favor to expose the ORM to the service layer.
 So I thought about publicly exposing my why, so I can remit here and not repeat myself every time.
 
+
 For introduction to the Repository, check [here](http://martinfowler.com/eaaCatalog/repository.html).
 This post will also be an extension from what I've already said on my previous [post](http://www.kspace.pt/posts/n-tier-applications-back-then-and-now/).
 
 
 Let's get to the point. My first problem with Repositories is that they hide, and often blocks you the use of advanced features of the actual ORM. Future queries, cascade deletes, batch updates, etc...
+
 
 I've seen two different strategies with repositories. The most radical one, it's a full closed box, where they implement every query that needs to be issued. They main advantage of this method is that there's a single place where all queries sit, at the cost of filling each repository with methods for each different type.
 
