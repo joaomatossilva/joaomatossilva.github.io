@@ -4,7 +4,7 @@ permalink: /posts/:title
 auto: true
 title : Kappy Space
 production_url : http://kappy.github.io
-description: "Personal Space"
+description: "Personal Blog about software architecture and life"
 disqus_shortname: kappyspace
 analytics: UA-42239910-1
 gauges: a
