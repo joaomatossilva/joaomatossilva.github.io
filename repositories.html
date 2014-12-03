@@ -1,0 +1,12 @@
+---
+layout: layout
+title: "My Repositories"
+---
+
+<section class="content repositories">
+	<div>
+  {% for repository in site.github.public_repositories %}
+		<a href="{{ repository.html_url }}"><span>{{ repository.full_name }} </span></a>
+  {% endfor %}
+	</div>
+</section>

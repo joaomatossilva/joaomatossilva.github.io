@@ -1,0 +1,5 @@
+	<div>
+  {% for repository in site.github.public_repositories %}
+		<a href="{{ repository.html_url }}"><span>{{ repository.full_name }} </span></a>
+  {% endfor %}
+	</div>
