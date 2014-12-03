@@ -1,5 +1,9 @@
 	<div>
-  {% for repository in site.github.public_repositories %}
-		<a href="{{ repository.html_url }}"><span>{{ repository.full_name }} </span></a>
-  {% endfor %}
+		<ul>
+		{% for repository in site.github.public_repositories %}
+			{% if repository.fork == false  %}
+				<li><a href="{{ repository.html_url }}"><span>{{ repository.full_name }} </span></a></li>
+			{% endif %}
+		{% endfor %}
+		</ul>
 	</div>
