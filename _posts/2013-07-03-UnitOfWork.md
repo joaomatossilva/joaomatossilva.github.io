@@ -14,7 +14,7 @@ Are you still doing Ado.Net directly? In what year do you live in?
 
     public class UnitOfWork : IDisposable
     {
-        private readonly IDbConnection connection;
+        private IDbConnection connection;
         private IDbTransaction transaction;
 
         public UnitOfWork(string connectionString, bool requireTransaction = true)
@@ -90,7 +90,7 @@ This is what I end up with:
 
     public class UnitOfWork : IDisposable
     {
-        private readonly IDbConnection connection;
+        private IDbConnection connection;
         private IDbTransaction transaction;
 
         public UnitOfWork(string connectionString, bool requireTransaction = true)
