@@ -28,7 +28,7 @@ Also, for this example, I'll be using NInject and NInject.Extensions.Interceptio
 
 ##Show me the code already!
 
-Ok, ok.. Let's make a new client, called a ClientImproved. First we bind the interfaces and the implementations. Oh wait, did I said interfaces?
+Ok, ok.. Let's refactor our NaiveClient, and extract interfaces on the public methods. Then we bind the interfaces and the implementations. Oh wait, did I said interfaces?
 Right, for the interception work the best, we need to work with interfaces and not the concrete types themselfs. But that is already your common practice, right?
 
 So, here's the glue:
