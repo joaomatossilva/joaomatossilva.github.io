@@ -34,6 +34,7 @@ To simulate a cache, I created a simple cache provider.
 I also created a `PoorMansCacheProvider` that only stores the values on an `Hastable`. Please do note that this cache isn't production quality. It's just an academic proof of concept.
 
 Here's the cache interceptor:
+
     public class CacheInterceptor : IInterceptor
     {
         private readonly ICacheProvider _cacheProvider;
@@ -61,6 +62,7 @@ Here's the cache interceptor:
             _cacheProvider.Set(key, invocation.ReturnValue);
         }
     }
+    
 On it, I’m just generating a key that allows me to differentiate action invocations (even so, in this example we only got 1) and also differentiate invocations by parameters.
 If the key exists, we return the value we got on store. If not, we proceed the chain of execution and save the result. Could it be simpler?
 
@@ -79,6 +81,7 @@ Most of the hard work is done, but a still a detail on the setup of our intercep
             binding.Intercept().With<RetryInterceptor>().InOrder(2);
         }
     }
+    
 Note the `InOrder` extension. That's the way we setup the execution order of the interceptors.
 
 ##Show me the results!
@@ -87,7 +90,9 @@ Well, surprisingly, we didn't get a performance boost from our first example. Bu
 As for the resulting numbers:
 0.2% error rate. We're increasing performance and in the process we increased the resilience. By not needing to invoke the service so many times, we did increased the resilience by a significant order of magnitude.
 Notice the Execution Success: 30. This 30 is the different invocations we have. For the most sharp reader, we're invoking the service like this:
+
     client.GetMyDate(DateTime.Today.AddDays(i % 30));
+    
 This causes the cache to store 30 different values, hence the 30 success invocations.
 To achieve those 30 success we needed to call the service 48 times.
 2 times out of those 1000, we couldn't get any response.
