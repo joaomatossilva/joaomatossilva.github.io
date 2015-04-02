@@ -17,28 +17,6 @@ The full source code can be located [here](https://github.com/kappy/FaultyMiddle
 ## Try Again, and Again, and Again...
 
 If the error is in fact transient, we can avoid it if we retry the invocation.
-The other way around, if the errors is caused by bad data that we send erroneously, then retrying won't do us any good. This is where we distinguish application errors or communication errors. For simplicity sake we'll just consider the later one.
-
-Ok, so let's get the party started. We need to repeat the service invocation if we got any exception. One way to do it, is to code the repeat logic on the client implementation. But what if we get more services? What if we get more actions to call? No... This is not the way to go.
-What if we could put a transparent piece between the code that invokes the client and the client itself? Well, we actually can. It's called an **interceptor**!
-
-To use an interceptor, first let's call a friend of mine. **Dependency Injection**.
-For the sake of length of this post, I won't detail what DI is. Just Google it.
-Also, for this example, I'll be using NInject and NInject.Extensions.Interception.LinFu packages for handling DI and Interception, but you can easily switch to the DI container of your own choosing. The important here is how the pieces work together, not who glue them.
-
-##Show me the code already!
-
-Ok, ok.. Let's make a new client, called a ClientImproved. First we bind the interfaces and the implementations. Oh wait, did I said interfaces?
-Right, for the interception work the best, we need to work with interfaces and not the concrete types themselves. But that is already your common practice, right?
-
-So, here's the glue:
-This is a series of blog posts that focuses on faulty middleware services invocations, and how can we reduce the impact of those faults.
-[Part I](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-i/)
-Part II (this)
-
-## Try Again, and Again, and Again...
-
-If the error is in fact transient, we can avoid it if we retry the invocation.
 The other way around, if the erros is caused by missdata that we send erroneously, then retrying won't do us any good. This is where we distinguish application errors or comunication errors. For simplicity sake we'll just consider the later one.
 
 Ok, so let's get the party started. We need to repeate the service invocation if we got any exception. One way to do it, is to code the repeate logic on the client implementation. But what if we get more services? What if we get more actions to call? No... This is not the way to go.
@@ -54,6 +32,7 @@ Ok, ok.. Let's make a new client, called a ClientImproved. First we bind the int
 Right, for the interception work the best, we need to work with interfaces and not the concrete types themselfs. But that is already your common practice, right?
 
 So, here's the glue:
+
     public class Module : NinjectModule
     {
         public override void Load()
@@ -65,6 +44,7 @@ So, here's the glue:
     
 What we're telling here is that `INaiveClient` is served by the type `NaiveClient` but has a `RetryInterceptor` between.
 Here's the retry:
+
     public class RetryInterceptor : IInterceptor
     {
         private readonly StatsCounter _counter;
@@ -102,6 +82,7 @@ The `invocation.Proceed()` is the magic here. From the docs:
 > Continues the invocation, either by invoking the next interceptor in the chain, or if there are no more interceptors, calling the target method.
 
 We need also change our test program, to use the magic DI.
+
     class Program
     {
         const int TimesToInvoke = 1000;
