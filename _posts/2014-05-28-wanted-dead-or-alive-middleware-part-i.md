@@ -21,9 +21,9 @@ Who never invoked a middleware may throw the first stone here.
 I call it a middleware any piece of software that runs anywhere and anyhow, and was made by any. I don't need to know how it's made, just that I need to invoke a service and it gives me an answer, sometimes...
 
 Let's focus on that sometimes.
-- Sometimes its being deployed a new version and the service is down.
-- Sometimes there is a bug, and the service blow up.
-- Sometimes the server is so overloaded and the service times out.
+- Sometimes a new version is being deployed and the service is down.
+- Sometimes there is a bug and the service blow up.
+- Sometimes the server is so overloaded, the service times out.
 - Sometimes we lose network and we can't reach the service.
 - Well... there's probably like 1001 reasons why some service fails giving us a proper response.
 
@@ -43,6 +43,9 @@ Let's simulate a faulty service:
 
         public string GetMyDate(DateTime dateTime)
         {
+            //Some work
+            Thread.Sleep(2);
+            
             if (Rand.NextDouble() <= .3)
             {
                 throw new Exception("Fault!");
@@ -91,11 +94,8 @@ And finally, here is our test program. Let's simulate 1000 executions. It's real
 
         static void Main(string[] args)
         {
-            var kernel = new StandardKernel();
-            kernel.Load(new Module());
-
-            var counter = kernel.Get<StatsCounter>();
-            var client = kernel.Get<INaiveClient>();
+            var counter = new StatsCounter();
+            var client = new NaiveClient(counter);
             counter.Stopwatch.Start();
             for (var i = 0; i < TimesToInvoke; i++)
             {
@@ -110,7 +110,6 @@ And finally, here is our test program. Let's simulate 1000 executions. It's real
                 }
             }
             counter.Stopwatch.Stop();
-
             counter.PrintStats();
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
@@ -118,8 +117,15 @@ And finally, here is our test program. Let's simulate 1000 executions. It's real
     }
 
 
-![client](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/client_zps5bfde724.png)
+![client](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/interceptor_I_zps9foj5eko.png)
 
-In approximately 23 milliseconds we invoked 1000 times the Service.GetMyDate and got 283 errors. It’s like 28,3% errors for those who know simple math (for those who don't just take my word for it). That was the expected result. Next post let's dive on how we can improve these results.
+In approximately 29 seconds we invoked 1000 times the Service.GetMyDate and got 321 errors. It’s like 32,1% errors for those who know simple math (for those who don't just take my word for it). That was the expected result. Next post let's dive on how we can improve these results.
 
+
+Part I (this)
+ 
+[Part II](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-ii/)
+ 
+[Part III](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-iii/)
+ 
 The full source code can be located [here](https://github.com/kappy/FaultyMiddleware)
