@@ -85,17 +85,16 @@ Most of the hard work is done, but a still a detail on the setup of our intercep
 Note the `InOrder` extension. That's the way we setup the execution order of the interceptors.
 
 ##Show me the results!
-![ClientImprovedCached](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/ClientimprovedCached_zps5ba87cc2.png)
-Well, surprisingly, we didn't get a performance boost from our first example. But that can easily being explained by the hash lookup and string key manipulations.
-As for the resulting numbers:
-0.2% error rate. We're increasing performance and in the process we increased the resilience. By not needing to invoke the service so many times, we did increased the resilience by a significant order of magnitude.
+![ClientImprovedCached](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/interceptor_III_zpsare5hqkr.png)
+We invoked the service 1000 times in 1.6 secods. That is a huge performance increase. As for the resulting numbers:
+0.15% error rate. We're increasing performance and in the process we increased the resilience. By not needing to invoke the service so many times, we did increased the resilience by a significant order of magnitude.
 Notice the Execution Success: 30. This 30 is the different invocations we have. For the most sharp reader, we're invoking the service like this:
 
     client.GetMyDate(DateTime.Today.AddDays(i % 30));
     
 This causes the cache to store 30 different values, hence the 30 success invocations.
-To achieve those 30 success we needed to call the service 48 times.
-2 times out of those 1000, we couldn't get any response.
+To achieve those 30 success we needed to call the service 45 times.
+1 time out of those 1000, we couldn't get any response on any of the tries before the result was cached.
 
 
 ##Series conclusion
