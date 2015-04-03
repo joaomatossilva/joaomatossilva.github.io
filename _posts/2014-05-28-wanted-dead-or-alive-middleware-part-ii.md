@@ -79,6 +79,7 @@ Here's the retry:
 
 In simple terms, it's invocating the `invocation.Proceed()` until it succeeds or we reach the maximum tries.
 The `invocation.Proceed()` is the magic here. From the docs:
+
 > Continues the invocation, either by invoking the next interceptor in the chain, or if there are no more interceptors, calling the target method.
 
 We need also change our test program, to use the magic DI.
