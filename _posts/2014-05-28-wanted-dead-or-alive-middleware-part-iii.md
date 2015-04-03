@@ -100,6 +100,7 @@ To achieve those 30 success we needed to call the service 45 times.
 ##Series conclusion
 I don't know about you, but this is a really neat way of improving an application performance.
 The awesome part of this series is that we didn't have to mess around the client implementation. We extracted it an interface, but that's about it, and it should be already your way to do things. 
+
 > Program to interfaces, not implementations
 
 Dependency Injection and Interception are indeed tools that you should have always on your pocket.
