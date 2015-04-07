@@ -121,7 +121,7 @@ Take notice that we only work with `INaiveClient`. We don’t' have any referenc
 This time we completed the 1000 invocations in 50 seconds, but we had only 28 failures. That's 2,8% error rate (again, trust my math). It's a really nicer number than 32,1% error rate from our last example, and we "didn’t changed anything" on our client (only exctracted an interface out of it, that should already be a practice). We just inserted a middle piece that extend the default behavior. The higher time can be easily justified by retries that were made. More 417 invocations were made to accomplish those retries.
 Note also the Execution Fail number is a bit higher. That's also because we're doing more invocations.
 
-##Does it get better that that?
+##Does it get better than that?
 This is a great improvement. We traded of some performance to gain some resilience. But can we improve this better, and of course, without changing any implementation?
 Of course we can.
 On my next post, I'll add some cache layer, again by using interception, and not changing anything on the client and the retries components.
