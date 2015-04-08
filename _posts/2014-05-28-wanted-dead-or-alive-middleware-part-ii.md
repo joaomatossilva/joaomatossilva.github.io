@@ -23,8 +23,8 @@ Ok, so let's get the party started. We need to repeate the service invocation if
 What if we could put a transparent piece between the code that invokes the client and the client itself? Well, we actually can. It's called an **interceptor**!
 
 To use an interceptor, first let's call a friend of mine. **Dependency Injection**.
-For the sake of leght of this post, I won't detail what DI is. Just Google it.
-Also, for this example, I'll be using NInject and NInject.Extensions.Interception.LinFu packages for handling DI and Interception, but you can easly switch to the DI container of your own choosing. The important here is how the pieces work togheter, not who glue them.
+For the sake of lenght of this post, I won't detail what DI is. Just Google it.
+Also, for this example, I'll be using NInject and NInject.Extensions.Interception.LinFu packages for handling DI and Interception, but you can easly switch to the DI container of your own choosing. The important here is how the pieces work togheter, not what glues them.
 
 ##Show me the code already!
 
@@ -116,9 +116,9 @@ We need also change our test program, to use the magic DI.
         }
     }
     
-Take notice that we only work with `INaiveClient`. We don’t' have any reference were to the `RetryInterceptor`. The for cycle is the same, no changes what so ever.	
+Take notice that we only work with `INaiveClient`. We don’t have any direct reference to the `RetryInterceptor`. The for cycle is the same, no changes what so ever.
 ![ClientImprovedStats](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/interceptor_II_zpssj2ud9ya.png)
-This time we completed the 1000 invocations in 50 seconds, but we had only 28 failures. That's 2,8% error rate (again, trust my math). It's a really nicer number than 32,1% error rate from our last example, and we "didn’t changed anything" on our client (only exctracted an interface out of it, that should already be a practice). We just inserted a middle piece that extend the default behavior. The higher time can be easily justified by retries that were made. More 417 invocations were made to accomplish those retries.
+This time we completed the 1000 invocations in 50 seconds, but we had only 28 failures. That's 2,8% error rate (again, trust my math). It's a really nicer number than 32,1% error rate from our last example, and we "didn’t change anything" on our client (only extracted an interface out of it, that should already be a practice). We just inserted a middle piece that extend the default behavior. The higher time can be easily justified by retries that were made. More 417 invocations were made to accomplish those retries.
 Note also the Execution Fail number is a bit higher. That's also because we're doing more invocations.
 
 ##Does it get better than that?
