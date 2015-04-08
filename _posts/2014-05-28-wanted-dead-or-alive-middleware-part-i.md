@@ -21,6 +21,7 @@ Who never invoked a middleware may throw the first stone here.
 I call it a middleware any piece of software that runs anywhere and anyhow, and was made by any. I don't need to know how it's made, just that I need to invoke a service and it gives me an answer, sometimes...
 
 Let's focus on that sometimes.
+
 - Sometimes a new version is being deployed and the service is down.
 - Sometimes there is a bug and the service blow up.
 - Sometimes the server is so overloaded, the service times out.
