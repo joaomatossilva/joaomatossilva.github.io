@@ -21,7 +21,7 @@ The same way, most services that outputs data that isn't changing every second (
 
 ##Do we need to change?
 No we do not. We already made the required changes when we first introduced the interceptor.
-Nothing keeps us from adding a new peace between and let that piece decide if we need to really invoke the service or we already know the result and output it right away.
+Nothing keeps us from adding a new piece between and let that piece decide if we need to really invoke the service or we already know the result and output it right away.
 
 To simulate a cache, I created a simple cache provider.
 
