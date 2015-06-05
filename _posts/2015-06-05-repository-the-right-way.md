@@ -5,6 +5,7 @@ layout: post
 ---
 
 
+
 ## Repository the right way
 
 So.. You just finished creating your super data access layer, a whole lot of repositories on top of Entity Framework, in order to make it testable. 
@@ -24,7 +25,7 @@ You add some sql logging to your `DbContext` to check it out...
             var context = new RepoDataContext();
             _repository = new CustomerRepository(context);
             _logBuffer = new StringBuilder();
-            context.Database.Log = WriteSqlToBuffer;
+            context.Database.Log = _logBuffer.AppendLine;
         }
         public ActionResult ThisActionDoesntPerformWell()
         {
