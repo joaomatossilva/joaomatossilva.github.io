@@ -34,6 +34,7 @@ You add some sql logging to your `DbContext` to check it out...
     }
 
 You get this output:
+
     Opened connection at 05/06/2015 23:04:11 +01:00
     SELECT 
         [Extent1].[Id] AS [Id], 
@@ -69,6 +70,7 @@ Did you already spotted the error?
 You probably did. 
 Yup, it's the line `public Customer[] Get(Func<Customer, bool> predicate)` of the `CustomerRepository`.
 By replacing that line with `public Customer[] Get(Expression<Func<Customer, bool>> predicate)` everything works again as expected.
+
     Opened connection at 05/06/2015 23:20:03 +01:00
     SELECT 
         [Extent1].[Id] AS [Id], 
@@ -83,6 +85,7 @@ By replacing that line with `public Customer[] Get(Expression<Func<Customer, boo
 ## The Why
 
 There is a big difference between a `Func<Customer, bool>` and a `Expression<Func<Customer, bool>>`, despite both can be assigned as `c => c.Name == "Kappy"`, the first one is the same as declaring inline the following function:
+
     bool Predicate(Customer c)
     {
         return c.Name == "Kappy";
