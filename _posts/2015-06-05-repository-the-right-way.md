@@ -1,8 +1,9 @@
 ---
-published: false
+published: true
 title: Repository the right way
 layout: post
 ---
+
 
 ## Repository the right way
 
