@@ -6,6 +6,7 @@ layout: post
 
 
 I'm not really a fan of Test Driven Development (TDD). All that write a failing test before the feature, then implement it until the test passes, gives me a feeling of the amount of hours spent on writing code without need.
+
 That said, it doesn't mean I don't like Unit tests. Quite the opposite. I like them very much, and I think they're a very useful tool on your belt.
 
 This is an example of how I sometimes use Unit tests on my day to day. 
@@ -39,10 +40,13 @@ There you go. Bug report replicated successfully. Now that we replicated the pro
 ![unit test pass](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/bugreport_test_pass_zpsaudqhnsw.png)
 
 Done. Bug fixed. the best thing is that if you keep the test, you're ensuring that you don't have regressions on this particular bug.
+
 Some may argue that this is very similar to TDD. I honestly disagree, mainly in the point that I don't like to write code without knowing if ever will going to be used.
 
 ## Is TDD a bad thing?
 
 Of course not. It's a very good way to minimize bug within your application, and so, keeping the quality very high. 
+
 It's only my personal opinion that sometimes feels like we're writing lots of code, for simple stuff. 
+
 One might argue that writing the test before is cheaper than writing it afterwards, and maybe they're right...
