@@ -33,11 +33,9 @@ In order to get an order for the Customer would you create it on the `OrderServi
 
 > We need to create a new operation to retrieve the shop the customer as chosen as its favorite
 
-Input: Customer
-
-Output: A shop
-
-Operation: From a list of shops, select the shop the customer has as favorite.
+- Input: Customer
+- Output: A shop
+- Operation: From a list of shops, select the shop the customer has as favorite.
 
 So, what is the most preeminent entity here, shop or a customer? My option is shop, what's yours?
 
