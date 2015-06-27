@@ -14,6 +14,7 @@ Now that we put this out of the way, let's start the article.
 
 ------------------------------------
 
+##Introduction
 A very common 3 (or 4) layer architecture is defined by having a Presentation, Business and Data Access layers.
 
 Particularly in the Business layer, also exist multiple flavors... Managers, Services, Beans, Handlers, etc... All of them have in common:
@@ -23,6 +24,8 @@ Particularly in the Business layer, also exist multiple flavors... Managers, Ser
 - They shouldn't leak data entities.
 
 Blá blá blá... Enough of introductions...
+
+#The Problem
 
 Lets imagine the follow scenario. We have a web application on which the business applications is defined by services. Each entity has a service (similar to Entity Services, which many consider an Anti-pattern, but that concept has a different scope than this (SOA), and clearly out of this post scope).
 
