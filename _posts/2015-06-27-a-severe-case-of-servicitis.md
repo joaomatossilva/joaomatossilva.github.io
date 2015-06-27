@@ -1,8 +1,9 @@
 ---
-published: false
+published: true
 title: A severe case of Servicitis
 layout: post
 ---
+
 
 Before we go any further, let me start by stating two important thigs:
 
