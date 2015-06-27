@@ -10,8 +10,8 @@ Before we go any further, let me start by stating two important thigs:
 - Disambiguation from "Cervicitis" or any other disease;
 - The title choice was only to be catchy, no pun intended there.
 
-
 Now that we put this out of the way, let's start the article.
+------------------------------------
 
 A very common 3 (or 4) layer architecture is defined by having a Presentation, Business and Data Access layers.
 
