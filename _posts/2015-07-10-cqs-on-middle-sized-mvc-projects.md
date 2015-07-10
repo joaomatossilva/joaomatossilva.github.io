@@ -1,8 +1,9 @@
 ---
-published: false
+published: true
 title: CQS on middle sized MVC projects
 layout: post
 ---
+
 
 In my [previous post](http://www.kspace.pt/posts/a-severe-case-of-servicitis/) I've introduced it by saying it exists multiple flavors on the Business Layer of multiple layer architecture.
 
