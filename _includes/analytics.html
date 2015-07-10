@@ -7,9 +7,7 @@
 
   ga('create', '{{ site.analytics }}', 'auto');
   ga('send', 'pageview');
+  setTimeout(ga.push(['_trackEvent', 'NoBounce', 'Over 10 seconds'])’,10000);
 
-</script>
-<script type="text/javascript">
-setTimeout(_gaq.push(['_trackEvent', 'NoBounce', 'Over 10 seconds'])’,10000);
 </script>
 {% endif %}
