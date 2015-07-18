@@ -1,8 +1,9 @@
 ---
-published: false
+published: true
 title: "CQS on MVC - Crosscutting Concerns"
 layout: post
 ---
+
 
 On my last post I vaguely introduced how CQS and a middle sized MVC project was match that fits like a glove.
 
@@ -117,4 +118,3 @@ With this in place, It allows me to register my handlers by simply calling:
 
     builder.RegisterHandlers(typeof(IRequestHandler<,>), typeof(CurrentUserHandlerWrapper<,>));
     builder.RegisterHandlers(typeof(IAsyncRequestHandler<,>), typeof(CurrentUserAsyncHandlerWrapper<,>));
-    
