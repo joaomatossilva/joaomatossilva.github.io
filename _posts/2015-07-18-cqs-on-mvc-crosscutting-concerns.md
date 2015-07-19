@@ -5,6 +5,7 @@ layout: post
 ---
 
 
+
 On my last post I vaguely introduced how CQS and a middle sized MVC project was match that fits like a glove.
 
 In this post I will dig a little deeper and I'll explain how we can add behavior whit the minimal impact.
@@ -118,3 +119,7 @@ With this in place, It allows me to register my handlers by simply calling:
 
     builder.RegisterHandlers(typeof(IRequestHandler<,>), typeof(CurrentUserHandlerWrapper<,>));
     builder.RegisterHandlers(typeof(IAsyncRequestHandler<,>), typeof(CurrentUserAsyncHandlerWrapper<,>));
+
+## Final considerations
+
+This is a great way to insert crosscutting behavior without impacting the business logic or code already written. This can also be applyed to insert auditing, logging, cross boundaries transactions, validation, etc..
