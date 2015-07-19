@@ -5,6 +5,7 @@ layout: post
 ---
 
 
+
 In my [previous post](http://www.kspace.pt/posts/a-severe-case-of-servicitis/) I've introduced it by saying it exists multiple flavors on the Business Layer of multiple layer architecture.
 
 On this post, I want to talk a bit on [CQS](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation) applied on a MVC project. Also related is the [Command Pattern](https://en.wikipedia.org/wiki/Command_pattern).
@@ -128,4 +129,4 @@ Conceptually, this pattern is very straight forward. Every-time we receive a req
 
 This architecture applied, keeps the web project business clean, and with only one dependency, the mediator. This last bullet for me is a big winner. Many time I see multiple dependencies on a controller, that aren't used on the many actions.
 
-Because this is a message based communication, this is very scalable. Moving from a simple Mediator to a Service Bus, is a breeze. This is also very easy to apply cross-cutting behavior like logging, security or validation, using decorators on the handlers. But I'll show you a bit more on this on my next posts.
+Because this is a message based communication, this is very scalable. Moving from a simple Mediator to a Service Bus, is a breeze. This is also very easy to apply cross-cutting behavior like logging, security or validation, using decorators on the handlers. But I'll show you a bit more on this on my next post [CQS on MVC - Crosscutting Concerns](http://www.kspace.pt/posts/cqs-on-mvc-crosscutting-concerns/).
