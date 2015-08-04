@@ -4,14 +4,15 @@ title: "Entity Framework migrations and branches don't play well "
 layout: post
 ---
 
-My team and I, decided that was time already to use Entity Framework Code first and their migrations. I used already a few times FluentMigrator, so using the Entity Framework ones, shouldn't be that hard.
+
+My team and I, decided that was time already to use Entity Framework Code first and their migrations. I used already a few times [FluentMigrator](https://github.com/schambers/fluentmigrator), so using the Entity Framework ones, shouldn't be that hard.
 
 ### We were wrong... What we found isn't pretty.
 
 We use Bitbucket, feature branches and pull requests in our development cycle, and recently we just stumbled into the following scenario:
 Alice and Bob are developers, each one with a specific task. Bob needs to add a trucks feature, while Alice needs to add a Name into the user profile (of course names and tasks are entirely random and they represent only an example).
 
-Both start they work from a HEAD 123456. Bob creates branch bob-feature, implements his changes (on this example just creates an entity named Truck), runs the command `Add-Migration Trucks` and commit the `2c430d4 - Added Trucks feature`, containing the migration 12312545345_Trucks.cs as follow. After the commit he creates the Pull Request for his feature.
+Both start they work from a `HEAD 4fd9a75`. Bob creates branch bob-feature, implements his changes (on this example just creates an entity named Truck), runs the command `Add-Migration Trucks` and commit the `2c430d4 - Added Trucks feature`, containing the migration 12312545345_Trucks.cs as follow. After the commit he creates the Pull Request for his feature.
 
 Alice does a very similar procedure. Creates branch alice-feature, implements her changes (just adding a simple `string Name` property on the already existing `ApplicationUser` class), runs the command `Add-Migration UserName` and commit the `2659e15 - Added User Name feature` containing the migration 12312545345_UserName.cs as follow.
 
@@ -33,4 +34,4 @@ The `Update-Database` checks exactly that. In this particular case, it thinks th
 
 This is not a new issue, in fact, it has been like this from the start. There is even a [MSDN Article](https://msdn.microsoft.com/en-us/data/dn481501.aspx) about this behavior and workarounds for it. But the solutions are simply unacceptable, has to have manual process steps every time we merge migrations. Why don't they singe they're selves to reproduce all the migrations code and compare it to the actual model, I don't know. They should only execute the code and nothing else.
 
-The more I use Entity Framework migrations, the more I like FluentMigrator.
+The more I use Entity Framework migrations, the more I like [FluentMigrator](https://github.com/schambers/fluentmigrator).
