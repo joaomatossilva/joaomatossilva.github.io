@@ -6,7 +6,7 @@ layout: post
 
 
 
-My team and I, decided that was time already to use Entity Framework Code first and their migrations. I used already a few times [FluentMigrator](https://github.com/schambers/fluentmigrator), so using the Entity Framework ones, shouldn't be that hard.
+My team and I, decided that was time to use Entity Framework Code first and their migrations. I used [FluentMigrator](https://github.com/schambers/fluentmigrator) to manage my migrations already a few times , so using the Entity Framework ones, shouldn't be that hard.
 
 ### We were wrong... What we found isn't pretty.
 
