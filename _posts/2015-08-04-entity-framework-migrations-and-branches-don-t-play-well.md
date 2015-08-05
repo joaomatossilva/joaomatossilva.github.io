@@ -70,11 +70,14 @@ Kelly (another developer) tries to run the project from the HEAD on main, and sh
 
 Pending changes? but all my changes are there...
 
+## Digging into it
+
 Why does this error appear? Microsoft saves a model snapshot with every migration it takes (is the Source field on the migration resource file). Since the last two migrations were created on different branches, they don't know each other. So, the latest migration snapshot (the one from Alice, but could be the other way around) doesn't know the migration before already exceuted and inserted its content.
 The `Update-Database` checks exactly that. In this particular case, it thinks the Truck entity isn't created, and tries to add it. It fails because that entity already exists.
 
 Even if you do what the message says, and run Add-Migration againd, it will create a new migration creating the Truck entity again.
 
-This is not a new issue, in fact, it has been like this from the start. There is even a [MSDN Article](https://msdn.microsoft.com/en-us/data/dn481501.aspx) about this behavior and workarounds for it. But the solutions are simply unacceptable, has to have manual process steps every time we merge migrations. Why don't they singe they're selves to reproduce all the migrations code and compare it to the actual model, I don't know. They should only execute the code and nothing else.
+This is not a new issue, in fact, it has been like this from the start. There is even a [MSDN Article](https://msdn.microsoft.com/en-us/data/dn481501.aspx) about this behavior and workarounds for it. But the solutions are simply unacceptable. To have manual process steps every time we merge migrations, is a No-Go! 
+Why don't they singe they're selves to reproduce all the migrations code and compare it to the actual model, I don't know. They should only execute the code and nothing else.
 
 The more I use Entity Framework migrations, the more I like [FluentMigrator](https://github.com/schambers/fluentmigrator).
