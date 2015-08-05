@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "Entity Framework migrations and branches don't play well together"
 layout: post
 ---
