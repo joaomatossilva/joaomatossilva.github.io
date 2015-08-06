@@ -6,7 +6,8 @@ layout: post
 
 
 
-My team and I, decided that was time to use Entity Framework Code first and their migrations. I used [FluentMigrator](https://github.com/schambers/fluentmigrator) to manage my migrations already a few times , so using the Entity Framework ones, shouldn't be that hard.
+
+My team and I, decided that was time to use Entity Framework Code first and their migrations. I used [FluentMigrator](https://github.com/schambers/fluentmigrator) to manage my migrations already a few times , so using the Entity Framework ones, shouldn't be that hard. At the time of this writing we're using version 6.1.3.
 
 ### We were wrong... What we found isn't pretty.
 
@@ -81,3 +82,10 @@ This is not a new issue, in fact, it has been like this from the start. There is
 Why don't they singe they're selves to reproduce all the migrations code and compare it to the actual model, I don't know. They should only execute the code and nothing else.
 
 The more I use Entity Framework migrations, the more I like [FluentMigrator](https://github.com/schambers/fluentmigrator).
+
+## Update 2015-08-06 - There is light at the end of the tunnel
+
+Thanks you Jared Dykstra, for pointing me in the direction of this annoucement from one of the developers from EF. On Entity Framework 7 (at the time of writing still in beta6), this is addressed and the snapshot will only be used for reference. Source of the announcement [here](http://www.bricelam.net/2014/12/16/ef7-migrations-designtime.html).
+
+
+
