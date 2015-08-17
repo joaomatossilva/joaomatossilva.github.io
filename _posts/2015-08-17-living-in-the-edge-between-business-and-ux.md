@@ -61,5 +61,50 @@ You're not alone on the web. When we design a product to be consumed on the web,
 
 Imagine 2 users wanting to turn off the toggle switch. First one does indeed shut it down, but the next one turns it on again. Worst, the first user got the feedback of the button has been shutdown, but the second gets the feedback that he just turn it on. What?
 
-So what's the solution? Istead of making the presentation dumb.. Why not make the actual business dumb? I mean, 
+So what's the solution? Istead of making the presentation dumb.. Why not make the actual business dumb? I mean, make the business layer explicitly set the desired state. For that, now we need to pass on the desired value throught the form. This will result in the following:
+
+Controller (UX):
+
+    public ActionResult Toggle()
+    {
+    	var statusModel = _myToggleService.GetStatus();
+        return View(statusModel);
+    }
+    
+    [HttpPost]
+    public ActionResult Toggle(bool state)
+    {
+        var statusModel = _myToggleService.SetStatus(state);
+        return View(statusModel);
+    }
+
+View (UX):
+
+    @using(Html.BeginForm("Toggle")){
+    	<span>Status: @Model.State</span>
+        <input type="hidden" name="state" value="@(!Model.State)" />
+        <input type="submit" value="Toggle" />
+    }
+
+Service (Business):
+
+    public StatusModel GetStatus()
+    {
+    	/* Get entity code (or anything else...)*/
+        return new StatusModel { Status = entity.Status };
+    }
+    
+    public StatusModel SetStatus(bool state)
+    {
+        /* Get entity code (or anything else...) */
+        entity.Status = state;
+        /* Save entity (or anything else...) */
+        return new StatusModel { Status = entity.Status };
+    }
+
+So, everything still works, tests are green, business layer is dumb, stateless, and if a second user (for most unlikely to happen) tries to turn off, even if the first user already turn it off, it will stay off.
+
+## Conclusion..
+
+This was a simple scenario, but similar issues happen everyday. It's not easy to separate what is presentation logic and what is in fact business logic. Not every **if** is business logic. The world is not back and white, there are some grey areas as well.
 
