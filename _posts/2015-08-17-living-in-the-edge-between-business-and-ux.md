@@ -9,7 +9,7 @@ Remember me talking about multi layers applications? This one I will talk about 
 
 ## The scenario
 
-Let's start from the presentation. Here it's where the ux is implemented. In this case, we're doing a on/off button, specificly, a toggle button.
+Let's start from the presentation. Here it's where the ux is implemented. In this case, we're doing a on/off button, specifically, a toggle button.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/2/2a/Ringing_the_elevator_alarm.jpg)
 
@@ -59,9 +59,9 @@ Ok.. So the Code works.. We can make Unit tests for this and they'll all pass. S
 
 You're not alone on the web. When we design a product to be consumed on the web, intranet, or anyone's browser, we take the chances of having more than one user/browser/tab open on the same form.
 
-Imagine 2 users wanting to turn off the toggle switch. First one does indeed shut it down, but the next one turns it on again. Worst, the first user got the feedback of the button has been shutdown, but the second gets the feedback that he just turn it on. What?
+Imagine 2 users wanting to turn off the toggle switch. First one does indeed shut it down, but the next one turns it on again. Worst, the first user got the feedback of the button has been shut down, but the second gets the feedback that he just turn it on. What?
 
-So what's the solution? Istead of making the presentation dumb.. Why not make the actual business dumb? I mean, make the business layer explicitly set the desired state. For that, now we need to pass on the desired value throught the form. This will result in the following:
+So what's the solution? Instead of making the presentation dumb, why not make the actual business dumb? I mean, make the business layer explicitly set the desired state. For that, now we need to pass on the desired value through the form. This will result in the following:
 
 Controller (UX):
 
@@ -106,5 +106,4 @@ So, everything still works, tests are green, business layer is dumb, stateless, 
 
 ## Conclusion..
 
-This was a simple scenario, but similar issues happen everyday. It's not easy to separate what is presentation logic and what is in fact business logic. Not every **if** is business logic. The world is not back and white, there are some grey areas as well.
-
+This was a simple scenario, but similar issues happen every day. It's not easy to separate what is presentation logic and what is in fact business logic. Not every **if** is business logic. The world is not back and white, there are some grey areas as well.
