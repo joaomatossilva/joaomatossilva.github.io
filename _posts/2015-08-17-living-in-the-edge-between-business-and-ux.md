@@ -1,8 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: Living in the edge between business and ux
 ---
+
 
 The line that dictates the separation of user experience (ux) and the business logic is not always clear.
 Remember me talking about multi layers applications? This one I will talk about some code that is near between the business and the presentation layer.
