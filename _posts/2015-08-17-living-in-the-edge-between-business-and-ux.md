@@ -20,7 +20,7 @@ Controller (UX):
 
     public ActionResult Toggle()
     {
-    	var statusModel = _myToggleService.GetStatus();
+        var statusModel = _myToggleService.GetStatus();
         return View(statusModel);
     }
     
@@ -34,7 +34,7 @@ Controller (UX):
 View (UX):
 
     @using(Html.BeginForm("Toggle")){
-    	<span>Status: @Model.State</span>
+        <span>Status: @Model.State</span>
         <input type="submit" value="Toggle" />
     }
 
@@ -42,7 +42,7 @@ Service (Business):
 
     public StatusModel GetStatus()
     {
-    	/* Get entity code (or anything else...)*/
+        /* Get entity code (or anything else...)*/
         return new StatusModel { Status = entity.Status };
     }
     
@@ -68,7 +68,7 @@ Controller (UX):
 
     public ActionResult Toggle()
     {
-    	var statusModel = _myToggleService.GetStatus();
+        var statusModel = _myToggleService.GetStatus();
         return View(statusModel);
     }
     
@@ -82,7 +82,7 @@ Controller (UX):
 View (UX):
 
     @using(Html.BeginForm("Toggle")){
-    	<span>Status: @Model.State</span>
+        <span>Status: @Model.State</span>
         <input type="hidden" name="state" value="@(!Model.State)" />
         <input type="submit" value="Toggle" />
     }
@@ -91,7 +91,7 @@ Service (Business):
 
     public StatusModel GetStatus()
     {
-    	/* Get entity code (or anything else...)*/
+        /* Get entity code (or anything else...)*/
         return new StatusModel { Status = entity.Status };
     }
     
