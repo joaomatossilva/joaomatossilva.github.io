@@ -61,5 +61,5 @@ You're not alone on the web. When we design a product to be consumed on the web,
 
 Imagine 2 users wanting to turn off the toggle switch. First one does indeed shut it down, but the next one turns it on again. Worst, the first user got the feedback of the button has been shutdown, but the second gets the feedback that he just turn it on. What?
 
-
+So what's the solution? Istead of making the presentation dumb.. Why not make the actual business dumb? I mean, 
 
