@@ -53,4 +53,13 @@ Service (Business):
         return new StatusModel { Status = entity.Status };
     }
 
+Ok.. So the Code works.. We can make Unit tests for this and they'll all pass. So what is the issue here? Why are we even talking about this?
+
+## The web is not a lonely place
+
+You're not alone on the web. When we design a product to be consumed on the web, intranet, or anyone's browser, we take the chances of having more than one user/browser/tab open on the same form.
+
+Imagine 2 users wanting to turn off the toggle switch. First one does indeed shut it down, but the next one turns it on again. Worst, the first user got the feedback of the button has been shutdown, but the second gets the feedback that he just turn it on. What?
+
+
 
