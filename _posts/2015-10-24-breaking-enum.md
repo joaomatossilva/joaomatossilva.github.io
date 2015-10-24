@@ -76,7 +76,7 @@ A new version of the core, changed the enum to:
         Disabled
     }
 
-At first sight, it seems a pretty unoffensive change, because we're using enums and not magic numbers, so everything should be ok.
+At first sight, it seems a pretty inoffensive change, because we're using enums and not magic numbers, so everything should be ok.
 Since the _Helper_ library is a 3rd party, it doesn't get update at the same rhythm as the core. Let's try our application again.
 
 ![Status is Disabled](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/BreakingEnum2_zps88k0jfgp.png)
