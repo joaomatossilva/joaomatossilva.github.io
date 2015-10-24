@@ -95,7 +95,7 @@ At first we thought this should be a Visual Studio bug, but even after restart t
 
 ### After hours of tries and research...
 
-We finally discovered the issue. As it turns out, Visual Studio was right, but it uses the loaded version of the _Common_ assembly at version 2.0. The Helper library was compiled against the version 1.0 of the _Common_ assembly.
+We finally discovered the issue. As it turns out, Visual Studio was right, as it uses the loaded version of the _Common_ assembly at version 2.0. The Helper library was compiled against the version 1.0 of the _Common_ assembly.
 The `Enum.Parse()` uses the run-time version of the _Common_, the 2.0. but the static part of the comparison `StatusEnum.Active` is compiled against the version 1.0. Being a constant, the value of that enum is used by the compiler and replaced inline. It doesn't care about the literal part of the Enum (Enums are mostly `int`s by default, but you did knew that already, right?).
 
 So basically, the run-time was comparing `0 == 1` and that is obviously `false`. You can se exacly that, if we cast the values to `int` like in the image below.
