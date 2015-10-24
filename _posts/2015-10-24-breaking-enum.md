@@ -10,7 +10,7 @@ Typically we're used to think of breaking changes when we change method signatur
 
 While they must be avoided, they're normal part of code evolution. New features sometimes need big changes. Semantic versioning give us some helper lines in order to manage expectations on the library consumers whether a new version might include or not breaking changes. Usually only on major versions increments a library can include them, but even so, they're should be avoided. There's always some "disappointment" when we have to re-write our code that was already working in order to adapt to a new library version.
 
-## Enougth if the talking...
+## Enougth of talking...
 
 Imagine that we have an application that consists on a core library (named BreakingEnum.Common.Dll on this example), another helper library that can be a third party plugin (named BreakingEnum.Helper.Dll) and a frontend application, that puts it all in motion. All of this components are only referenced by the libraries and not by source, as they are provided by different providers.
 
