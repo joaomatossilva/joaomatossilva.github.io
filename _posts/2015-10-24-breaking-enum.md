@@ -81,7 +81,7 @@ Since the _Helper_ library is a 3rd party, it doesn't get update at the same rhy
 
 ![Status is Disabled](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/BreakingEnum2_zps88k0jfgp.png)
 
-"Status is Disabled". Hum... that's a bit unexpected.... Luckily, Helper is an open source project, so we can actually include the source on our solution and try to debug the issue. But even so, because it's a third party, it references the Common by assembly, and the project wasn't been upgraded yet. This means the project targets the _Common_ v1.0.
+"Status is Disabled". Hum... that's a bit unexpected.... Luckily, Helper is an open source project, so we can actually include the source on our solution and try to debug the issue. But even so, because it's a third party, it references the _Common_ by assembly, and the project wasn't been upgraded yet. This means the project targets the _Common_ v1.0.
 
 Let's look at the debug
 
