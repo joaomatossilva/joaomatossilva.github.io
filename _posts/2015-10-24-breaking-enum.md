@@ -108,4 +108,6 @@ Changing the value of Enums, can be dangerous, especially when they're used as c
 
 So next time you need to change an Enum, either, set the values explicitly in order not to change the previous values, or don't add any value before, just append new ones. Right @Umbraco? No more stuff like [this](https://github.com/umbraco/Umbraco-CMS/commit/b77521cbc54e45554c0a51a99ebf3baae7555613#diff-326c0207194aecf1d0a252fcc283270e). Let's keep uneeded changes to a minimum.
 
+You can find the entire code used by this example, and try it yourself here: [https://github.com/kappy/BreakingEnum](https://github.com/kappy/BreakingEnum)
+
 
