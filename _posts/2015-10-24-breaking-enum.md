@@ -61,6 +61,8 @@ The first few lines, are only used to display the versions used by each assembly
 
 Running the application give us the result we're expecting.
 
+![Status is active](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/BreakingEnum1_zpsro6jxans.png)
+
 "Status is active", and all assemblies are version 1.0. All is working, life is good, etc...
 
 ### But then...
@@ -77,13 +79,13 @@ A new version of the core, changed the enum to:
 At first sight, it seems a pretty unoffensive change, because we're using enums and not magic numbers, so everything should be ok.
 Since the Helper library is a 3rd party, it doesn't get update at the same rhythm as the core. Let's try our application again.
 
-
+![Status is Disabled](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/BreakingEnum2_zps88k0jfgp.png)
 
 "Status is Disabled". Hum... that's a bit unexpected.... Luckily, Helper is an open source project, so we can actually include the source on our solution and try to debug the issue. But even so, because it's a third party, it references the Common by assembly, and the project wasn't been upgraded yet. This means the project targets the Common v1.0.
 
 Let's look at the debug
 
-
+![Debugging](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/BreakingEnum3_zps9dtekv8s.png)
 
 So.. `status` has been parsed into `Active`. That is right. Next...
 The equality `status == StatusEnum.Active` is evaluated as true, ok.. Next...
@@ -98,7 +100,7 @@ The `Enum.Parse()` uses the run-time version of the Common, the 2.0. but the sta
 
 So basically, the run-time was comparing `0 == 1` and that is obviously `false`. You can se exacly that, if we cast the values to `int` like in the image below.
 
-
+![](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/BreakingEnum4_zpsoqkay6ft.png)
 
 ## Conclusion
 
