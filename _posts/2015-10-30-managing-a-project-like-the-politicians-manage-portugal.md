@@ -6,7 +6,8 @@ title: Managing a project like the politicians manage Portugal
 
 
 
-Today in Portugal, a new government takes place. With a party that won the elections, that was merged by two other parties against another major party and two other smaller. Those tree together represent more votes than the party that won.
+
+Today in Portugal, a new government takes place. With a party that won the elections, that was merged by two other parties against another major party and two other smaller. Those three together represent more votes than the party that won.
 
 Let's see how that applies to software development.
 
