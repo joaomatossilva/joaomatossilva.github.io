@@ -12,7 +12,7 @@ In short, a routine should start only on one single location and exit on another
 
 Well... Let's see the entry first... On modern iterative programming languages (like C#), all methods always start on the first line of the method declaration. This is almost true, since weird stuff can be accomplished with the `goto` statement but I can't recall the last time I have ever used it (on c#) or even see it being used outside decompiled code. So.. I think we can assume the we're using single entry by default.
 
-Single Exit... this is where the issues arise. This mean that we can only use return once? This should have been called "Single Return" (k). Does this means we can't use a `throw new Exception("bla bla bla")`? 
+Single Exit... this is where the issues arise. This mean that we can only use `return` once? This should have been called "Single Return" (k). Does this means we can't use a `throw new Exception("bla bla bla")`? 
 The issue I have with this, is that I like to return early. I like to keep the level of nesting and indentation inside a method to the minimum.
 
 Take a look at this example. A simple routine (for demo proposes) to calculate the length of any string except for spaces until it finds the work `stop`.
