@@ -1,8 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: "Single Entry, Single Exit... No wonder it's still single..."
 ---
+
 
 During an internal code review, I asked a colleague of mine why was he using a variable inside a method just to hold the result of it and return it in the end. Why not just return immediately as soon as it knows the output?
 He told me that he was trying to follow the "Single Entry, Single Exit Principle (SESE)".
