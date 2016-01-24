@@ -59,6 +59,6 @@ Let's see how the same exercise would look without the single "return" rule.
 		return textWihoutSpaces.Length;
 	}
 
-Less indentation improves readability and maintainability. 
+Less indentation improves readability and maintainability. In this example we kept the nesting level only to 1.
 
 So I guess this is why this Principle is still Single after all these years. Maybe it should create a profile on Match dot com.
