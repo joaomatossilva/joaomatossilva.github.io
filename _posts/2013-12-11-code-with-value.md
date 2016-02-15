@@ -4,12 +4,14 @@ title: Code with value
 layout: post
 ---
 
+
 Not a long time ago, I was called to assist and manage an already ongoing project.
 This is a small excerpt of a member of one call in the business layer:
 
 ![](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/bll_zpsd1f4cb75.png)
 
 Well... Despite the obvious indentation and naming/code style, this small method has a lot of issues.
+
 - It shouldn't dispose objects that we don't own. This applies to transaction and erm parameters;
 - Its disposing erm and creating a new instance, but erm parameter isn't set as ref or out parameter, so the calling code only see the already disposed instance;
 - Isn't c# a object oriented programming language? then why so many parameters on the method signature;
