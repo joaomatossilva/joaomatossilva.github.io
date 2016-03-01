@@ -1,0 +1,93 @@
+[
+	{
+		title: "Memoria DDR 256MB",
+		description: "DDR - 256MB - 333MHz",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_225106_zpswupitgnh.jpg",
+		sold: false
+	},
+	{
+		title: "Memoria 2x DDR2 512MB",
+		description: "DDR2 - 512MB - 533MHz (PC533)",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_225057_zps94jen9dg.jpg",
+		sold: false
+	},
+	{
+		title: "Memoria 2x DDR 256MB SODIMM",
+		description: "DDR - 256MB - PC3200 CL3",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_224854_zpsijbq2hnt.jpg",
+		sold: false
+	},
+	{
+		title: "Memoria 2x DDR2 512MB SODIMM",
+		description: "DDR2 - 512MB - PC4200",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_224822_zpsvzsp00sq.jpg",
+		sold: false
+	},
+	{
+		title: "Disk Dock Station",
+		description: "USB or eSata interface, Sata disks",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_224216_zpspj66orra.jpg",
+		sold: false
+	},
+	{
+		title: "HDD IDE 80GB",
+		description: "Seagate",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_223209_zpsv8dviwex.jpg",
+		sold: false
+	},
+	{
+		title: "Linksys Powerline",
+		description: "Model - ???",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_223009_zpsh02fj5q0.jpg",
+		sold: false
+	},
+	{
+		title: "Router Linksys WRT320N-EZ",
+		description: "Linksys WRT320N-EZ, with DD-WRT firmware installed",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_222658_zpspswrynpi.jpg",
+		sold: false
+	},
+	{
+		title: "USB Wireless adapter Linksys WUSB54G",
+		description: "Linksys WUSB54G",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_222234_zpst8p61542.jpg",
+		sold: false
+	},
+	{
+		title: "USB TV adapter pinnacle",
+		description: "model unknown",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_222048_zpspcmaiyws.jpg",
+		sold: false
+	},
+	{
+		title: "Cardbus Wireless adapter SMC",
+		description: "SMC2835W",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_222013_zpsj9moyk0m.jpg",
+		sold: false
+	},
+	{
+		title: "Logitech Inspire T5400",
+		description: "Set colunas 5.1",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_221604_zpsh6fltjea.jpg",
+		sold: false
+	},
+	{
+		title: "Logitech Elite Keyboard",
+		description: "USB",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_220359_zpssscpu9vh.jpg",
+		sold: false
+	},
+	{
+		title: "XFX 6800 DDR3",
+		description: "XFX 6800 DDR3",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_220250_zpss7l4hks8.jpg",
+		sold: false
+	},
+	{
+		title: "D-Link DAP-1320",
+		description: "Wireless Range Extender",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_220157_zpslh3meux9.jpg",
+		sold: false
+	}
+	
+]

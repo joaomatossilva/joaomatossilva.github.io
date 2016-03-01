@@ -1,0 +1,35 @@
+---
+layout: layout
+title: "Make an Offer | Kappy Sapce"
+---
+
+<section class="content offers">
+	<p>&nbsp;</p>
+  <h1 class="thin">Make an Offer</h1>
+  <p>Com mais um rebento a caminho, o espa&ccedil;o em casa come&ccedil;a a ficar um pouco limitado.</p>
+  <p>Decidi ent&atilde;o fazer um levantamento de material velho e outro n&atilde;o t&atilde;o velho. Se vires algo que te interessa manda-me PM, ou deixa mensagem aqui no Disquss</p>
+  <p>Nada tem pre&ccedil;o estipulado. Gostas? Prop&otilde;e tu o pre&ccedil;o!!</p>
+  <ul class="listing">
+    {% for offer in site.data.offers %}
+    <li>
+		<h3>{{ offer.title }}</h3>
+		<div class="row">
+			<div class="col col-xs-12 col-lg-4">
+				<a target="_blank" href="{{ offer.image }}"><img src="{{ offer.image }}" alt="{{ offer.title }}"></a>
+			</div>
+			<div class="col col-xs-12 col-lg-8">
+				<p>
+					{{ offer.description }}
+				</p>
+			</div>
+		</div>
+      
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+<div class="pull"></div>
+  {% include facebook.html %}
+  {% include twitter.html %}
+  <hr>
+  {% include disqus.html %}
