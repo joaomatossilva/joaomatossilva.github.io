@@ -48,6 +48,24 @@
 		sold: false
 	},
 	{
+		title: "Router Linksys WRT160N-EW",
+		description: "Linksys WRT160N-EW",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_093328_zps4o3dd0ci.jpg",
+		sold: false
+	},
+	{
+		title: "Router D-Link DIR-555",
+		description: "D-Link DIR-555",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075916_zpsacucec1v.jpg",
+		sold: false
+	},
+	{
+		title: "Router Linksys AG241-EU",
+		description: "Linksys AG241-EU ADSL2 Anex A",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075941_zpsokystbsd.jpg",
+		sold: false
+	},
+	{
 		title: "USB Wireless adapter Linksys WUSB54G",
 		description: "Linksys WUSB54G",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_222234_zpst8p61542.jpg",
@@ -57,6 +75,18 @@
 		title: "USB TV adapter pinnacle",
 		description: "model unknown",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_222048_zpspcmaiyws.jpg",
+		sold: false
+	},
+	{
+		title: "PCI TV adapter Pinnacle",
+		description: "Pinnacle PCTV Pro",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075551_zpsp4h8jyuh.jpg",
+		sold: false
+	},
+	{
+		title: "UPS Unitek",
+		description: "Estado unkonwn",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_080218_zpsertzb9p8.jpg",
 		sold: false
 	},
 	{
@@ -84,9 +114,27 @@
 		sold: false
 	},
 	{
+		title: "Cirrus Logic PCI",
+		description: "",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075633_zpsamnbepet.jpg",
+		sold: false
+	},
+	{
+		title: "Matrox G200",
+		description: "",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075724_zpsfekgj3qp.jpg",
+		sold: false
+	},
+	{
 		title: "D-Link DAP-1320",
 		description: "Wireless Range Extender",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_220157_zpslh3meux9.jpg",
+		sold: false
+	},
+	{
+		title: "Controladora Promise Sata",
+		description: "Sata 150 Tx4",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075830_zpsbemhgrpf.jpg",
 		sold: false
 	}
 	
