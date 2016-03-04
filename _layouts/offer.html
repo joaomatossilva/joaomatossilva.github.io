@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <title>{{ page.title }}</title>
+
+  <meta name="author" content="{{ site.author.name }}" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="og:image" content="http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160304_081551_zpscp6srcjv.jpg" />
+  <meta name="og:url" content="http://www.kspace.pt{{ page.url }}" />
+  <meta name="og:title" content="Make an Offer - Kappy Space" />
+  <meta name="og:type" content="website" />
+  <meta name="og:description" content="{{ site.description }}" />
+  <meta name="fb:app_id" content="{{ site.author.facebookAppId }}" />
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
+    rel='stylesheet' type='text/css'>
+
+  <link href="/css/up.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="https://secure.gravatar.com/avatar/7692b9b9e3a77aa669c8592e7bf495be?s=16">
+
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="k" style="width: 35px"/> {{ site.title }}</a>
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav pull-right hidden-print">
+          <li>
+            <a class="hidden-sm" title="About me" href="/about">
+              <i class="icon-user icon-large"></i>
+            </a>
+            <a class="visible-sm" title="About me" href="/about">
+              <i class="icon-user icon-large"></i>
+              About me
+            </a>
+          </li>
+          <li>
+            <a class="hidden-sm" href="/atom.xml" title="Atom Feed">
+              <i class="icon-rss icon-large"></i>
+            </a>
+            <a class="visible-sm" href="/atom.xml" title="Atom Feed">
+              <i class="icon-rss icon-large"></i>
+              Atom Feed
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    {{ content }}
+  </div>
+
+  <div id="footer" class="hidden-print">
+    <section class="meta">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-2 col-offset-4">
+            <a href="https://twitter.com/{{ site.author.twitter }}">
+              <i class="icon icon-twitter icon-4x"></i>
+              <div>Follow me on Twitter.</div>
+            </a>
+          </div>
+          <div class="col col-lg-2 next">
+            <a href="https://github.com/{{ site.author.github }}">
+              <i class="icon icon-github icon-4x"></i>
+              <div>
+                See my github profile.
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  {% include analytics.html %}
+  {% include gauges.html %}
+</body>
+<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="/js/up.js"></script>
+</html>
