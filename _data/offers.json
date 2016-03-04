@@ -10,54 +10,63 @@
 		title: "Memoria DDR 256MB",
 		description: "DDR - 256MB - 333MHz",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_225106_zpswupitgnh.jpg",
+		price: 2,
 		sold: false
 	},
 	{
 		title: "Memoria 2x DDR2 512MB",
 		description: "DDR2 - 512MB - 533MHz (PC533)",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_225057_zps94jen9dg.jpg",
+		price: 4,
 		sold: false
 	},
 	{
 		title: "Memoria 2x DDR 256MB SODIMM",
 		description: "DDR - 256MB - PC3200 CL3",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_224854_zpsijbq2hnt.jpg",
+		price: 4,
 		sold: false
 	},
 	{
 		title: "Memoria 2x DDR2 512MB SODIMM",
 		description: "DDR2 - 512MB - PC4200",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_224822_zpsvzsp00sq.jpg",
+		price: 4,
 		sold: false
 	},
 	{
 		title: "Disk Dock Station",
 		description: "USB or eSata interface, Sata disks",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_224216_zpspj66orra.jpg",
+		price: 20,
 		sold: false
 	},
 	{
 		title: "HDD IDE 80GB",
 		description: "Seagate",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_223209_zpsv8dviwex.jpg",
+		price: 4,
 		sold: false
 	},
 	{
 		title: "Switch Longshine",
 		description: "Switch 10/100 - 5 portas",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160304_081228_zps3lcjc2qf.jpg",
+		price: 5,
 		sold: false
 	},
 	{
 		title: "Linksys Powerline",
 		description: "Model - ???",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_223009_zpsh02fj5q0.jpg",
+		price: 5,
 		sold: false
 	},
 	{
 		title: "Router Linksys WRT54GC",
 		description: "Linksys WRT54GC",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160304_081301_zpsdob8jrxf.jpg",
+		price: 5,
 		sold: false
 	},
 	{
@@ -70,90 +79,105 @@
 		title: "Router Linksys WRT160N-EW",
 		description: "Linksys WRT160N-EW",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_093328_zps4o3dd0ci.jpg",
+		price: 10,
 		sold: false
 	},
 	{
 		title: "Router D-Link DIR-555",
 		description: "D-Link DIR-555",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075916_zpsacucec1v.jpg",
+		price: 15,
 		sold: false
 	},
 	{
 		title: "Router Linksys AG241-EU",
 		description: "Linksys AG241-EU ADSL2 Anex A",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075941_zpsokystbsd.jpg",
+		price: 5,
 		sold: false
 	},
 	{
 		title: "USB Wireless adapter Linksys WUSB54G",
 		description: "Linksys WUSB54G",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_222234_zpst8p61542.jpg",
+		price: 5,
 		sold: false
 	},
 	{
 		title: "USB TV adapter pinnacle",
 		description: "model unknown",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_222048_zpspcmaiyws.jpg",
+		price: 5,
 		sold: false
 	},
 	{
 		title: "PCI TV adapter Pinnacle",
 		description: "Pinnacle PCTV Pro",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075551_zpsp4h8jyuh.jpg",
+		price: 5,
 		sold: false
 	},
 	{
 		title: "Cardbus Wireless adapter SMC",
 		description: "SMC2835W",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_222013_zpsj9moyk0m.jpg",
+		price: 2,
 		sold: false
 	},
 	{
 		title: "Logitech Inspire T5400",
 		description: "Set colunas 5.1",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_221604_zpsh6fltjea.jpg",
+		price: 20,
 		sold: false
 	},
 	{
 		title: "Logitech Elite Keyboard",
 		description: "USB",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_220359_zpssscpu9vh.jpg",
+		price: 10,
 		sold: false
 	},
 	{
 		title: "Logitech G15 Keyboard",
 		description: "English keyboard layout",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160304_072204_zpsd8npsr0p.jpg",
+		price: 15,
 		sold: false
 	},
 	{
 		title: "XFX 6800 DDR3",
-		description: "XFX 6800 DDR3",
+		description: "XFX 6800 256MB DDR3",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_220250_zpss7l4hks8.jpg",
+		price: 20,
 		sold: false
 	},
 	{
 		title: "Cirrus Logic PCI",
 		description: "",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075633_zpsamnbepet.jpg",
+		price: 5,
 		sold: false
 	},
 	{
 		title: "Matrox G200",
 		description: "",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075724_zpsfekgj3qp.jpg",
+		price: 5,
 		sold: false
 	},
 	{
 		title: "D-Link DAP-1320",
 		description: "Wireless Range Extender",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_220157_zpslh3meux9.jpg",
+		price: 10,
 		sold: false
 	},
 	{
 		title: "Controladora Promise Sata",
 		description: "Sata 150 Tx4",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075830_zpsbemhgrpf.jpg",
+		price: 10,
 		sold: false
 	}
 	
