@@ -1,5 +1,11 @@
 [
 	{
+		title: "Imate JASJAR",
+		description: "Pisa papeis com estilo. (working) - 640 x 480 pixels, 3.6 inches - Intel Bulverde 520 MHz",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_225106_zpswupitgnh.jpg",
+		sold: false
+	},
+    {
 		title: "Memoria DDR 256MB",
 		description: "DDR - 256MB - 333MHz",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_225106_zpswupitgnh.jpg",
@@ -36,9 +42,21 @@
 		sold: false
 	},
 	{
+		title: "Switch Longshine",
+		description: "Switch 10/100 - 5 portas",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160304_081228_zps3lcjc2qf.jpg",
+		sold: false
+	},
+	{
 		title: "Linksys Powerline",
 		description: "Model - ???",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_223009_zpsh02fj5q0.jpg",
+		sold: false
+	},
+	{
+		title: "Router Linksys WRT54GC",
+		description: "Linksys WRT54GC",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160304_081301_zpsdob8jrxf.jpg",
 		sold: false
 	},
 	{
@@ -105,6 +123,12 @@
 		title: "Logitech Elite Keyboard",
 		description: "USB",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160229_220359_zpssscpu9vh.jpg",
+		sold: false
+	},
+	{
+		title: "Logitech G15 Keyboard",
+		description: "English keyboard layout",
+		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160304_072204_zpsd8npsr0p.jpg",
 		sold: false
 	},
 	{
