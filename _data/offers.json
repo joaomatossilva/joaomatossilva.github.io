@@ -3,6 +3,7 @@
 		title: "Imate JASJAR",
 		description: "Pisa papeis com estilo. (working) - 640 x 480 pixels, 3.6 inches - Intel Bulverde 520 MHz",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160304_081551_zpscp6srcjv.jpg",
+		price: 20,
 		sold: false
 	},
     {
@@ -99,12 +100,6 @@
 		title: "PCI TV adapter Pinnacle",
 		description: "Pinnacle PCTV Pro",
 		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_075551_zpsp4h8jyuh.jpg",
-		sold: false
-	},
-	{
-		title: "UPS Unitek",
-		description: "Estado unkonwn",
-		image: "http://i1299.photobucket.com/albums/ag77/kappyzor/GarageSell/P_20160303_080218_zpsertzb9p8.jpg",
 		sold: false
 	},
 	{

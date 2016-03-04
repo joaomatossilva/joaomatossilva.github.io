@@ -17,7 +17,16 @@ published: true
 		<h3>{{ offer.title }}</h3>
 		<div class="row">
 			<div class="col col-xs-12 col-lg-4">
-				<a target="_blank" href="{{ offer.image }}"><img src="{{ offer.image }}" alt="{{ offer.title }}"></a>
+				<div class="wrapper">
+					<a target="_blank" href="{{ offer.image }}">
+						<img src="{{ offer.image }}" alt="{{ offer.title }}">
+						{% if offer.price %}
+						<div class="ribbon-wrapper-green">
+							<div class="ribbon-green">{{ offer.price }} &euro;</div>
+						</div>
+						{% endif %}
+					</a>
+				</div>
 			</div>
 			<div class="col col-xs-12 col-lg-8">
 				<p>
