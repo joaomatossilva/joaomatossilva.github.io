@@ -2,7 +2,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /posts/:title
 auto: true
-title : Kappy Space
+title : Kappy Space by Joao Matos Silva
 production_url : http://kappy.github.io
 description: "Personal Blog about software architecture and life"
 disqus_shortname: kappyspace
@@ -10,10 +10,10 @@ analytics: UA-42239910-1
 gauges: a
 author :
   name : Joao Matos Silva
-  github : kappy
+  github : joaomatossilva
   twitter : kappyzor
   facebookAppId: 779368612088019
-  email: kappy@acydburne.com.pt
+  email: joao@kspace.pt
 prose:
   metadata:
     _posts:
