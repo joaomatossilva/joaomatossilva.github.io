@@ -8,7 +8,7 @@ Today I got a nice surprise. I was updating a class on one of my OSS projects an
 I had just changed the README to README.md to take advantage of the Markdown styling.
 
 This was my surprise:
-![Markdown_on_vs2013](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/markdown_on_vs_2013_zps6b199989.png)
+![Markdown_on_vs2013](http://www.kspace.pt/images/blog/markdown_on_vs_2013_zps6b199989.png)
 Markdown rendering inside Visual Studio.
 Why was I editing markdown all this time on Notepad++? Why!?!?!?!
 
