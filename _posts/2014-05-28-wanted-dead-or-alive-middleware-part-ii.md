@@ -6,11 +6,11 @@ layout: post
 
 This is a series of blog posts that focuses on faulty middleware services invocations, and how can we reduce the impact of those faults.
 
-[Part I](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-i/)
+[Part I](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-i)
 
 Part II (this)
 
-[Part III](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-iii/)
+[Part III](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-iii)
 
 The full source code can be located [here](https://github.com/kappy/FaultyMiddleware)
 
