@@ -104,7 +104,7 @@ With that in the clear, it comes very obvious that all the records are being pul
 Like I said before, an `Expression<Func<Customer, bool>>` is not the same as the `Func<Customer, bool>`. It doesn't actually execute lambda `c => c.Name == "Kappy"`, like the `Func` does.
 Instead, it creates an expression graph composed of miltiple other smaller expressions that in hole represent the lambda that was specified.
 Let's take a look at the composition of our example:
-![Expression Graph](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/Expression_zpsqmgbwrno.png)
+![Expression Graph](http://www.kspace.pt/images/blog/Expression_zpsqmgbwrno.png)
 In red, you can see the left and right part of the expression, both of them Expressions of themselves.
 In yellow, you can the type of operation that is being applied to both sides. 
 It's with this information that EntityFramework, and other ORM's build the Sql statements for you.
