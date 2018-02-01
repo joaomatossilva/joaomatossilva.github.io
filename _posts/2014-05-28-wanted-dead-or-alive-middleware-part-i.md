@@ -8,9 +8,9 @@ This is a series of blog posts that focuses on faulty middleware services invoca
  
 Part I (this)
  
-[Part II](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-ii/)
+[Part II](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-ii)
  
-[Part III](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-iii/)
+[Part III](http://www.kspace.pt/posts/wanted-dead-or-alive-middleware-part-iii)
  
 The full source code can be located [here](https://github.com/kappy/FaultyMiddleware)
 
