@@ -24,6 +24,6 @@ Look at this sample code on Javascript:
 This is a perfectly valid code. The most obvious matter on this type of assignments is that, we’re assigning completely different things to the same variable witch causes the variable to lose all its meaning. Meaningful variables are the number one rule thumb on my book of trades. This is also one of the most common issues on code that I review.
 
 This is why I love typed languages:
-![](http://www.kspace.pt/images/blog/typeLanguage_zps682579fc.png)
+![](http://www.kspace.pt/images/blog/typeLanguage_zps682579fc.PNG)
 
 Can you see that thin red line? That's the IDE telling you: You're doing it wrong!
