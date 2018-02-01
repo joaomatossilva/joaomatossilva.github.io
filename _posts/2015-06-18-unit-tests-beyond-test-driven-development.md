@@ -33,11 +33,11 @@ Well, say no more... Let's put it to the test (pun intended).
     
 Pretty simple test. We just invoke our controller with the request data. For demo only, we don't need to mock any dependency. That would fall out the scope of this article.
 
-![unit test failing](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/bugreport_test_fail_zps6qvorojf.png)
+![unit test failing](http://www.kspace.pt/images/blog/bugreport_test_fail_zps6qvorojf.png)
 
 There you go. Bug report replicated successfully. Now that we replicated the problem, it's easier to pin point the problem. Apparently, someone (the virtual me) forgot to double check the age when performing some rate per age.
 
-![unit test pass](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/bugreport_test_pass_zpsaudqhnsw.png)
+![unit test pass](http://www.kspace.pt/images/blog/bugreport_test_pass_zpsaudqhnsw.png)
 
 Done. Bug fixed. the best thing is that if you keep the test, you're ensuring that you don't have regressions on this particular bug.
 
