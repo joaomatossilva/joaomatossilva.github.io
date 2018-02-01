@@ -62,7 +62,7 @@ TL TR: this is the repository status so far.
 
 Both branches have a migration, both branches compile and run individually with their own local databases.
 Bob's feature gets reviewed and is accepted, so the team merges it into main. Same goes for Alice's feature. 
-![](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/ef_migrations2_zpsnzgp9rym.PNG)
+![](http://www.kspace.pt/images/blog/ef_migrations2_zpsnzgp9rym.PNG)
 
 Both features are done, merged, finished. Until.....
 Kelly (another developer) tries to run the project from the HEAD on main, and she complains the application can't run. 
