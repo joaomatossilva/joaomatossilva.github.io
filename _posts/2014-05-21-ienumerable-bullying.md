@@ -8,7 +8,7 @@ I know I didn't post anything for quite a while. I'm sorry for that, but I'm hav
 
 
 I found this little pearl lying around on a past project that I was called out to save from disaster. Some classes and properties were renamed to protect the business value of the code, but the algorithm remains the same.
-![IEnumerableBullying](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/GetViewModel_zpsa791edf2.png)
+![IEnumerableBullying](http://www.kspace.pt/images/blog/GetViewModel_zpsa791edf2.png)
 
 It's so wrong at so many levels I can't even know where to begin. At least some points are worthy to point out like:
 - Why flatten the list in the first place? Having 10 properties named the same, doesn't make sence. What if tomorrow the business scenario changed from 10 questions to 100?
