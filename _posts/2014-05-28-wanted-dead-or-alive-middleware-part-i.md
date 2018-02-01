@@ -118,7 +118,7 @@ And finally, here is our test program. Let's simulate 1000 executions. It's real
     }
 
 
-![client](http://www.kspace.pt/images/blog/interceptor_I_zps9foj5eko.png)
+![client](http://www.kspace.pt/images/blog/interceptor_I_zps9foj5eko.PNG)
 
 In approximately 29 seconds we invoked 1000 times the Service.GetMyDate and got 321 errors. It’s like 32,1% errors for those who know simple math (for those who don't just take my word for it). That was the expected result. Next post let's dive on how we can improve these results.
 
