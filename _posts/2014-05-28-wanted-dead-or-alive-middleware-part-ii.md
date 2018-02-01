@@ -1,6 +1,6 @@
 ---
 published: true
-title: "Wanted dead or alive: Middleware (part II)"
+title: 'Wanted dead or alive: Middleware (part II)'
 layout: post
 ---
 
@@ -117,7 +117,7 @@ We need also change our test program, to use the magic DI.
     }
     
 Take notice that we only work with `INaiveClient`. We don’t have any direct reference to the `RetryInterceptor`. The for cycle is the same, no changes what so ever.
-![ClientImprovedStats](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/interceptor_II_zpssj2ud9ya.png)
+![ClientImprovedStats](http://www.kspace.pt/images/blog/interceptor_II_zpssj2ud9ya.png)
 This time we completed the 1000 invocations in 50 seconds, but we had only 28 failures. That's 2,8% error rate (again, trust my math). It's a really nicer number than 32,1% error rate from our last example, and we "didn’t change anything" on our client (only extracted an interface out of it, that should already be a practice). We just inserted a middle piece that extends the default behavior. The higher time can be easily justified by retries that were made. More 417 invocations were made to accomplish those retries.
 Note also the Execution Fail number is a bit higher. That's also because we're doing more invocations.
 
