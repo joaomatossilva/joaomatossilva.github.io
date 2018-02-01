@@ -81,13 +81,13 @@ A new version of the core, changed the enum to:
 At first sight, it seems a pretty inoffensive change, because we're using enums and not magic numbers, so everything should be ok.
 Since the _Helper_ library is a 3rd party, it doesn't get update at the same rhythm as the core. Let's try our application again.
 
-![Status is Disabled](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/BreakingEnum2_zps88k0jfgp.png)
+![Status is Disabled](http://www.kspace.pt/images/blog/BreakingEnum2_zps88k0jfgp.png)
 
 "Status is Disabled". Hum... that's a bit unexpected.... Luckily, Helper is an open source project, so we can actually include the source on our solution and try to debug the issue. But even so, because it's a third party, it references the _Common_ by assembly, and the project wasn't been upgraded yet. This means the project targets the _Common_ v1.0.
 
 Let's look at the debug
 
-![Debugging](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/BreakingEnum3_zps9dtekv8s.png)
+![Debugging](http://www.kspace.pt/images/blog/BreakingEnum3_zps9dtekv8s.png)
 
 So.. `status` has been parsed into `Active`. That is right. Next...
 The equality `status == StatusEnum.Active` is evaluated as true, ok.. Next...
@@ -102,7 +102,7 @@ The `Enum.Parse()` uses the run-time version of the _Common_, the 2.0. but the s
 
 So basically, the run-time was comparing `1 == 0` and that is obviously `false`. You can se exacly that, if we cast the values to `int` like in the image below.
 
-![](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/BreakingEnum4_zpsoqkay6ft.png)
+![](http://www.kspace.pt/images/blog/BreakingEnum4_zpsoqkay6ft.png)
 
 ## Conclusion
 
