@@ -8,7 +8,7 @@ layout: post
 Not a long time ago, I was called to assist and manage an already ongoing project.
 This is a small excerpt of a member of one call in the business layer:
 
-![](http://www.kspace.pt/images/blog/bll_zpsd1f4cb75.png)
+![](http://www.kspace.pt/images/blog/bll_zpsd1f4cb75.PNG)
 
 Well... Despite the obvious indentation and naming/code style, this small method has a lot of issues.
 
