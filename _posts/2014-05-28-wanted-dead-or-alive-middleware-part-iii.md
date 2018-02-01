@@ -1,6 +1,6 @@
 ---
 published: true
-title: "Wanted dead or alive: Middleware (part III)"
+title: 'Wanted dead or alive: Middleware (part III)'
 layout: post
 ---
 
@@ -85,7 +85,7 @@ Most of the hard work is done, but a still a detail on the setup of our intercep
 Note the `InOrder` extension. That's the way we setup the execution order of the interceptors.
 
 ##Show me the results!
-![ClientImprovedCached](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/interceptor_III_zpsare5hqkr.png)
+![ClientImprovedCached](http://www.kspace.pt/images/blog/interceptor_III_zpsare5hqkr.png)
 We invoked the service 1000 times in 1.6 secods. That is a huge performance increase. As for the resulting numbers:
 0.15% error rate. We're increasing performance and in the process we increased the resilience. By not needing to invoke the service so many times, we did increased the resilience by a significant order of magnitude.
 Notice the Execution Success: 30. This 30 is the different invocations we have. For the most sharp reader, we're invoking the service like this:
