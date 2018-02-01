@@ -8,7 +8,7 @@ When you're building any kind of software development project, there are some re
 One of them is the number of logical lines of code ([Source lines of code](http://en.wikipedia.org/wiki/Source_lines_of_code)) on a single class.
 
 This is one of those cases:
-![](http://www.kspace.pt/images/blog/CodeMEtrics_zps86d35f60.png)
+![](http://www.kspace.pt/images/blog/CodeMEtrics_zps86d35f60.PNG)
 3k LLoC on a single class is way too much... 
 
 Lets dig a little bit more into this class. Lets build a simple project to analyse the class stats.
