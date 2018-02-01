@@ -63,7 +63,7 @@ The first few lines, are only used to display the versions used by each assembly
 
 Running the application give us the result we're expecting.
 
-![Status is active](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/BreakingEnum1_zpsro6jxans.png)
+![Status is active](http://www.kspace.pt/images/blog/BreakingEnum1_zpsro6jxans.png)
 
 "Status is active", and all assemblies are version 1.0. All is working, life is good, etc...
 
