@@ -6,7 +6,7 @@ layout: post
 
 A common mistake I've seen sometimes is mixing up logging and auditing. Here's an example:
 
-![Log Class](http://i1299.photobucket.com/albums/ag77/kappyzor/Log_zpsc2ea63fa.png)
+![Log Class](http://www.kspace.pt/images/blog/Log_zpsc2ea63fa.png)
 
 The first public method, `Log_Action`, was used to register actions (like logons, logoffs, external services actions, etc...). This is a clear audit related action.
 
