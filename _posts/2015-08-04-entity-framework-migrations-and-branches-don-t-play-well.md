@@ -1,6 +1,6 @@
 ---
 published: true
-title: "Entity Framework migrations and branches don't play well together"
+title: Entity Framework migrations and branches don't play well together
 layout: post
 ---
 
@@ -57,7 +57,7 @@ Alice does a very similar procedure. Creates branch alice-feature, implements he
 Same applies, after the commit, she creates a Pull Request fo everyone to review.
 
 TL TR: this is the repository status so far.
-![](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/ef_migrations1_zpssqtp3w77.png)
+![](http://www.kspace.pt/images/blog/ef_migrations1_zpssqtp3w77.png)
 
 
 Both branches have a migration, both branches compile and run individually with their own local databases.
@@ -67,7 +67,7 @@ Bob's feature gets reviewed and is accepted, so the team merges it into main. Sa
 Both features are done, merged, finished. Until.....
 Kelly (another developer) tries to run the project from the HEAD on main, and she complains the application can't run. 
 
-![](http://i1299.photobucket.com/albums/ag77/kappyzor/Blog/EFmigrations3_zpsvodj4dwp.png)
+![](http://www.kspace.pt/images/blog/EFmigrations3_zpsvodj4dwp.png)
 
 Pending changes? but all my changes are there...
 
@@ -86,6 +86,3 @@ The more I use Entity Framework migrations, the more I like [FluentMigrator](htt
 ## Update 2015-08-06 - There is light at the end of the tunnel
 
 Thanks you Jared Dykstra, for pointing me in the direction of this annoucement from one of the developers from EF. On Entity Framework 7 (at the time of writing still in beta6), this is addressed and the snapshot will only be used for reference. Source of the announcement [here](http://www.bricelam.net/2014/12/16/ef7-migrations-designtime.html).
-
-
-
