@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Replacing the Data Layer
 ---
 For the first time in my professional career, I’ve made the exercise of changing the data backing store of an application. In this case, I’ve changed from a document database to a relational database. The goal was simple… Change the data layer of the application without changing anything else.
@@ -80,4 +80,3 @@ Would this happen if the application was built using a relational database in th
 I think it’s safe to say, that no matter what, our choice of the backing store still affects the way we design an application, from top to bottom. Of course we do our best to create that layer of abstraction, but we’re only humans. We can only predict based on what we know.
 
 If it was my design, I’m pretty positive that no repositories would be seen anywhere. I wouldn’t use the Onion Layers design. I would create vertical slices on the domain and mapping directly the data objects on the application. I wouldn’t care for database layer abstraction because I really want to use what each database features serve me best. Would this exercise be as “easy” as it was using that model? No, I guess not. But again, in more than 15 years, this is the first time I actually did it, and as of now, it is more academic than professional.
-
