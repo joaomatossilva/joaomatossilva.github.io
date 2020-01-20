@@ -17,10 +17,10 @@ The application followed a typical onion design of presentation, domain and data
 There is not much to be told about the Repository itself. Is as plain as it can be. A method to get an item, a method to search items, a save and another to delete items. The important bits to hold are the interface objects for input and output of the interface, those are domain objects. Remember the onion design I said before?
 
 Ok, enough talk, on to the action. I got to say, the big part of the things went smoothly. Simple domain objects were mapped from one repository implementation to the new one without hassle.
-The real problem rose with more complex domain objects. For example, a Book has a list of Authors. Since we were using a document database, that was really a no brainer. The authors list was denormalized and stored along side the book data. Every update on the chapters was simply persisted by saving the entire document on an atomic operation.
-But now on the relational database, each Chapter has its own row on a dedicated table. The million dollar question, how do we know which chapters were changed?
+The real problem rose with more complex domain objects. For example, a Book has a list of Authors. Since we were using a document database, that was really a no brainer. The authors list was denormalized and stored along side the book data. Every update on the authors was simply persisted by saving the entire document on an atomic operation.
+But now on the relational database, each Author has its own row on a dedicated table. The million dollar question, how do we know which authors were changed?
 From the DDD purity, the Domain objects should not have persistence details, so long for tracking changes. This means we need a way to keep sync between what we have on database and our domain object that was passed. 
-One solution is to eagerly load the inner authors list from our database entity and enumerate each domain chapter from input to check if already exists on the database, if no then add it. Then we need to enumerate the list from our database and check if all of them are still present on the domain list, if no, then remove it. And don’t forget to update the ones in the middle if needed.
+One solution is to eagerly load the inner authors list from our database entity and enumerate each domain author from input to check if already exists on the database, if no then add it. Then we need to enumerate the list from our database and check if all of them are still present on the domain list, if no, then remove it. And don’t forget to update the ones in the middle if needed.
 
     public void Save(Book entity)
     {
