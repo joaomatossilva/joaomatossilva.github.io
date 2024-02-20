@@ -51,4 +51,4 @@ A last note on why use Repositories and EntityFramework (or other kinds of ORM/m
 
 My advice is keep it simple, and if you're already using EntityFramework, you don't need to abstract it.
 
-If you don't feel up to writing your own queries, and don't feel up to reinventing the wheel, take a look at [Ardalis Specification](https://specification.ardalis.com/) nuget package. It's pretty cool!
+If you don't feel up to writing your own queries, and don't feel up to reinventing the wheel, take a look at [Ardalis Specification](https://specification.ardalis.com/) nuget package. It follows a little different signature as this examples, but is way neater. It's pretty cool!
